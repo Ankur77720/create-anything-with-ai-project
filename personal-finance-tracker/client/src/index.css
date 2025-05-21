@@ -8,6 +8,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--background-color);
   color: #333;
+  padding: 0;
+
 }
 
 
@@ -38,5 +40,32 @@ button {
 
 button:hover {
   background-color: rgb(190, 60, 20);
+}
+
+li>div{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li>div>div{
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  form, .wrapper {
+    padding: 20px !important;
+    flex-direction: column !important;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input, select {
+    width: 100%;
+  }
 }
 
